@@ -1,0 +1,19 @@
+<body>
+<table border=1>
+<caption>Таблица проектов</caption>
+<tr>
+<th>ID</th>
+<th>usr_id</th>
+<th>name</th>
+<th>link</th>
+</tr>
+{%for key in projects%}
+<tr>
+<td>{{key.id}}</td>
+<td>{{key.userid}}</td>
+<td>{{key.name}}</td>
+<td><a href="/projects/montrer/id={{key.id}}">About</a></td>
+</tr>
+{%endfor%}
+</table>
+</body>
